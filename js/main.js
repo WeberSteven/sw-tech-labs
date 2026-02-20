@@ -7,8 +7,10 @@ function type() {
     if (index < text.length) {
         typingElement.textContent += text.charAt(index);
         index++;
-        setTimeout(type, 50);
+        setTimeout(type, 40);
     }
 }
 
-document.addEventListener("DOMContentLoaded", type);
+document.addEventListener("DOMContentLoaded", () => {
+    type();
+});
