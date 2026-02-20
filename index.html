@@ -11,7 +11,7 @@
 
 <header>
     <div class="container">
-        <h1>SW Tech Labs MAYBE IT WORKS THIS TIME!</h1>
+        <h1>SW Tech Labs</h1>
         <nav>
             <a href="about.html">About</a>
             <a href="projects.html">Projects</a>
@@ -67,6 +67,45 @@
                 <h3>Infrastructure Documentation</h3>
                 <p>Full architecture diagrams and deployment workflows.</p>
             </div>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h2>Infrastructure Architecture</h2>
+
+        <div class="architecture-diagram">
+            <div class="node">GitHub</div>
+            <div class="arrow">↓</div>
+            <div class="node">Cloudflare (DNS + SSL)</div>
+            <div class="arrow">↓</div>
+            <div class="node">nginx Reverse Proxy<br>(Docker - 192.168.80.150)</div>
+            <div class="arrow">↓</div>
+            <div class="node">Web Server (nginx)<br>192.168.80.151</div>
+            <div class="arrow">↓</div>
+            <div class="node">Auto Deploy via Signed Webhook</div>
+        </div>
+
+        <div class="architecture-description">
+            <p>
+                This environment uses a segmented multi-tier architecture. 
+                Cloudflare provides DNS and SSL termination at the edge.
+                An internal Docker-based nginx reverse proxy routes traffic
+                securely to a dedicated web server tier.
+            </p>
+
+            <p>
+                Code changes are deployed through a GitHub webhook pipeline
+                with HMAC signature validation, triggering an automated
+                git-based deployment process. The webhook endpoint is
+                firewall-restricted and only accessible from the reverse proxy.
+            </p>
+
+            <p>
+                This setup mirrors modern production design patterns including
+                layered security, internal segmentation, and automated CI/CD workflows.
+            </p>
         </div>
     </div>
 </section>

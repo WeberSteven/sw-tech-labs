@@ -203,3 +203,43 @@ footer {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(8px); }
 }
+
+/* Infrastructure Architecture Section */
+
+.architecture-diagram {
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.node {
+    background: #1e293b;
+    padding: 18px 30px;
+    border-radius: 8px;
+    text-align: center;
+    margin: 10px 0;
+    border: 1px solid rgba(56, 189, 248, 0.3);
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.05);
+    transition: all 0.3s ease;
+}
+
+.node:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 25px rgba(56, 189, 248, 0.2);
+}
+
+.arrow {
+    font-size: 1.5rem;
+    color: #38bdf8;
+    opacity: 0.7;
+}
+
+.architecture-description {
+    margin-top: 30px;
+    color: #94a3b8;
+    line-height: 1.7;
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+}
