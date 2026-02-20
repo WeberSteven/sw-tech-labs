@@ -1,17 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SW Tech Labs</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <h1>SW Tech Labs</h1>
-    <p>Welcome to my homelab portfolio.</p>
 
-    <nav>
-        <a href="about.html">About</a> |
-        <a href="projects.html">Projects</a> |
-        <a href="contact.html">Contact</a>
-    </nav>
+<header>
+    <div class="container">
+        <h1>SW Tech Labs</h1>
+        <nav>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="container">
+        <h2>Building Real Infrastructure. Documenting the Process.</h2>
+        <p>Cloud. Networking. Automation. DevOps. Homelab Engineering.</p>
+        <a href="projects.html" class="btn">View Projects</a>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h2>About SW Tech Labs</h2>
+        <p>
+            SW Tech Labs is a self-hosted lab environment focused on infrastructure,
+            security, automation, and modern DevOps practices. Every system is designed,
+            deployed, and documented from the ground up.
+        </p>
+    </div>
+</section>
+
+<section class="section alt">
+    <div class="container">
+        <h2>Featured Projects</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Reverse Proxy + SSL Architecture</h3>
+                <p>Cloudflare + Docker Nginx reverse proxy with segmented web tier.</p>
+            </div>
+            <div class="card">
+                <h3>Automated Git Deployments</h3>
+                <p>Self-hosted web server pulling updates automatically via cron.</p>
+            </div>
+            <div class="card">
+                <h3>Infrastructure Documentation</h3>
+                <p>Full architecture diagrams and deployment workflows.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>© 2026 SW Tech Labs | Built & Hosted in My Homelab</p>
+    </div>
+</footer>
+
 </body>
 </html>
