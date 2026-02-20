@@ -82,3 +82,31 @@ footer {
     background: #111827;
     font-size: 0.9rem;
 }
+
+.accent {
+    color: #38bdf8;
+    text-shadow: 0 0 10px rgba(56, 189, 248, 0.6);
+}
+
+.typing {
+    font-size: 1.2rem;
+    margin: 20px 0;
+    min-height: 24px;
+    color: #94a3b8;
+}
+
+.btn {
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: #0ea5e9;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(56, 189, 248, 0.3);
+}
+
+.hero {
+    padding: 120px 0;
+    text-align: center;
+    background: radial-gradient(circle at center, #1e293b, #0f172a);
+}
